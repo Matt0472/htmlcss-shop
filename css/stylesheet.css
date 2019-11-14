@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.row {
+  margin-bottom: 20px;
+}
+.box {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.box .discount {
+  background-color: rgb(237, 84, 13);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.box:nth-child(2n+2) .discount {
+  background-color: rgb(65, 228, 23);
+}
+
+.box .heart {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  color:rgb(58, 51, 250);
+  font-size: 25px;
+  display: none;
+}
+
+.box:hover .heart {
+  display: block;
+}
